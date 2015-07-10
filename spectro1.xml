@@ -6,7 +6,7 @@
         <field name="OP">GT</field>
         <value name="A">
           <block type="sensor_spectrometer" id="86">
-            <field name="LIGHT">RED</field>
+            <field name="LIGHT">BLUE</field>
           </block>
         </value>
         <value name="B">
