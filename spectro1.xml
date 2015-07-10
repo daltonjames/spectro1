@@ -82,6 +82,48 @@
                                                     <field name="LIGHT">GREEN</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="controls_if" id="224" inline="false">
+                                                    <value name="IF0">
+                                                      <block type="logic_compare" id="232" inline="true">
+                                                        <field name="OP">LT</field>
+                                                        <value name="A">
+                                                          <block type="sensor_object" id="231">
+                                                            <field name="OBJECT">RIGHTFRONT</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="234">
+                                                            <field name="NUM">30</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block type="movement_setmotors" id="264" inline="true">
+                                                        <value name="BOTHMOVLEFT">
+                                                          <block type="math_number" id="265">
+                                                            <field name="NUM">20</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="BOTHMOVRIGHT">
+                                                          <block type="math_number" id="266">
+                                                            <field name="NUM">2</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="robot_delay" id="268" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="269">
+                                                                <field name="NUM">1000</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </statement>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
