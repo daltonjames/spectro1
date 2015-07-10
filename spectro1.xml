@@ -94,7 +94,7 @@
                                                         </value>
                                                         <value name="B">
                                                           <block type="math_number" id="234">
-                                                            <field name="NUM">30</field>
+                                                            <field name="NUM">80</field>
                                                           </block>
                                                         </value>
                                                       </block>
@@ -103,7 +103,7 @@
                                                       <block type="movement_setmotors" id="264" inline="true">
                                                         <value name="BOTHMOVLEFT">
                                                           <block type="math_number" id="265">
-                                                            <field name="NUM">20</field>
+                                                            <field name="NUM">100</field>
                                                           </block>
                                                         </value>
                                                         <value name="BOTHMOVRIGHT">
@@ -115,7 +115,7 @@
                                                           <block type="robot_delay" id="268" inline="true">
                                                             <value name="DELAY">
                                                               <block type="math_number" id="269">
-                                                                <field name="NUM">1000</field>
+                                                                <field name="NUM">10000</field>
                                                               </block>
                                                             </value>
                                                           </block>
