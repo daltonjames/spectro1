@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="7" inline="false" x="127" y="99">
+  <block type="controls_whileUntil" id="7" inline="false" x="119" y="30">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="logic_compare" id="125" inline="true">
@@ -95,7 +95,21 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="146"></block>
+      <block type="oled_drawtext" id="195">
+        <field name="TEXT">END = </field>
+        <next>
+          <block type="oled_drawnumber" id="196" inline="true">
+            <value name="NUMBER">
+              <block type="sensor_spectrometer" id="197">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="146"></block>
+            </next>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
