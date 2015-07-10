@@ -110,12 +110,16 @@
                                                         <statement name="DO0">
                                                           <block type="movement_reverse" id="381">
                                                             <next>
-                                                              <block type="robot_delay" id="382" inline="true">
-                                                                <value name="DELAY">
-                                                                  <block type="math_number" id="383">
-                                                                    <field name="NUM">2000</field>
+                                                              <block type="movement_stop" id="393">
+                                                                <next>
+                                                                  <block type="robot_delay" id="382" inline="true">
+                                                                    <value name="DELAY">
+                                                                      <block type="math_number" id="383">
+                                                                        <field name="NUM">5000</field>
+                                                                      </block>
+                                                                    </value>
                                                                   </block>
-                                                                </value>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
