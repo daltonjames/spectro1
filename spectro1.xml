@@ -17,7 +17,13 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="136">
+      <block type="led_select" id="206" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="math_number" id="207">
+            <field name="NUM">0</field>
+          </block>
+        </value>
         <next>
           <block type="oled_cleardisplay" id="155">
             <next>
