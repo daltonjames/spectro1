@@ -100,10 +100,15 @@
                                                       </block>
                                                     </value>
                                                     <statement name="DO0">
-                                                      <block type="movement_leftmotor" id="302" inline="true">
-                                                        <value name="MOVLEFT">
+                                                      <block type="movement_setmotors" id="313" inline="true">
+                                                        <value name="BOTHMOVLEFT">
                                                           <block type="math_number" id="303">
                                                             <field name="NUM">100</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="BOTHMOVRIGHT">
+                                                          <block type="math_number" id="314">
+                                                            <field name="NUM">0</field>
                                                           </block>
                                                         </value>
                                                         <next>
