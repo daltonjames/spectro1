@@ -100,7 +100,12 @@
                                                       </block>
                                                     </value>
                                                     <statement name="DO0">
-                                                      <block type="movement_right" id="292">
+                                                      <block type="movement_leftmotor" id="302" inline="true">
+                                                        <value name="MOVLEFT">
+                                                          <block type="math_number" id="303">
+                                                            <field name="NUM">9999</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
                                                           <block type="robot_delay" id="268" inline="true">
                                                             <value name="DELAY">
